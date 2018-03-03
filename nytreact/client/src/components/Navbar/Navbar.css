@@ -1,0 +1,16 @@
+nav{
+    padding:0 50px;
+    background-color:#c92f2f
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(212, 153, 154);
+}
+
+.brand-logo {
+    font-size: 30px;
+}

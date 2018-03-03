@@ -1,16 +1,33 @@
 {
-  "name": "nytreact",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
-  },
+  "name": "reactreader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "PORT=4000 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emmamr/NYT-React"
+  },
+  "author": "Emmanuel Mosqueda R.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emmamr/NYT-React/issues"
+  },
+  "homepage": "https://github.com/Emmamr/NYT-React",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7",
+    "nodemon": "^1.14.3",
+    "path": "^0.12.7"
   }
 }

@@ -1,0 +1,15 @@
+.card-title a {
+    color: rgb(247, 2, 2) !important;
+}
+
+.view a {
+    color: black;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: rgb(222,117,118);
+}
+
+.article-card {
+    background-color: white;
+}
